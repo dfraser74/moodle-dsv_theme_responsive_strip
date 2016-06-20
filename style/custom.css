@@ -1,0 +1,741 @@
+/* Headers and links 
+-------------------------*/
+
+a:link {
+    color: #005b7f;
+    text-decoration: none;
+}
+
+/* Fix primary buttons so they don't become blue fonted */
+.btn-primary {
+    color: #fff !important;
+}
+
+a:active {
+    color: #005b7f;
+    text-decoration: underline;
+}
+a:visited {
+    color: #005b7f;
+    text-decoration: underline;
+}
+a:hover {
+    color: #000000;
+    text-decoration: underline;
+}
+
+h1 a:link, h1 a:active, h1 a:visited {
+    color: #005b7f;
+    text-decoration: none;
+}
+h1 a:hover {
+    color: #005b7f;
+    text-decoration: underline;
+}
+h2 a:link, h2 a:active, h2 a:visited {
+    color: #005b7f;
+    text-decoration: none;
+}
+h2 a:hover {
+    color: #005b7f;
+    text-decoration: underline;
+}
+h3 a:link, h3 a:active, h3 a:visited {
+    color: #005b7f;
+    text-decoration: none;
+}
+h3 a:hover {
+    color: #005b7f;
+    text-decoration: underline;
+}
+h4 a:link, h4 a:active, h4 a:visited {
+    color: #005b7f;
+    text-decoration: none;
+}
+h4 a:hover {
+    color: #005b7f;
+    text-decoration: underline;
+}
+
+h1 {
+    font-size: 230%;
+}
+
+h2 {
+    font-size: 160%;
+}
+
+h3 {
+    font-size: 140%;
+}
+
+h4 {
+    font-size: 120%;
+}
+
+
+/* Blocks
+-----------------------*/
+
+.block {
+    margin-bottom: 20px;
+    border: none;
+    padding-top: 0px;
+    background-color: #fff;
+}
+
+.block a:link, .block a:visited, .block a:active {
+    color: #005B7F;
+    text-decoration: none;
+}
+
+.block a:hover {
+    text-decoration: underline;
+}
+
+.block .header {
+    /* border-top: 2px solid #da5013; */
+    border-top: 2px solid #e17e33;
+    background: #f7f6f1;
+    padding: 4px 5px 5px;
+}
+
+/*
+.block .title h2 {
+    color: #35251B;
+    font-weight: normal;
+    font-size: 1.2em;
+    margin: 0;
+}*/
+
+/* Fix for "My private files" buttons stretching outside of their container */
+@media(max-width: 979px) {
+    .block_private_files.block form > div {
+        margin: 0;
+        width: 100%;
+    }
+
+    .block_private_files.block form > div > input {
+        margin: 5px 0 0 0;
+        white-space: normal;
+        width: auto;
+    }
+}
+
+.usermenu .menubar a{
+    color: #fff !important;
+}
+
+.usermenu .menubar a:hover {
+    color: #005b7f !important;
+}
+
+.usermenu .show a {
+    color: #333 !important;
+}
+
+.usermenu .textmenu:hover{
+    background-color: #fff;    
+}
+
+.usermenu .login {
+    color: #fff;
+}
+
+.usermenu .login>a {
+    color: #e17e33 !important;
+}
+
+.usermenu .actionmenu a{
+    color: #005b7f !important;
+}
+
+.usermenu .menu .menu-action:hover{
+    color: #fff !important;
+}
+
+/* Fixing User Profile problem (MDL-43030)
+-------------------------*/
+.userprofile dl.list {
+    margin: 0px 0px 0px 110px;
+    padding-bottom: 0px;
+}
+
+.userprofile dl.list dt {
+    text-align: left;
+    clear: none;
+    width: 130px;
+}
+
+.userprofile dl.list dd {
+    margin-left: 20px;
+}
+
+.userprofile .profilepicture {
+    float: left;
+    margin-right: 0px;
+}
+
+.path-user .description {
+    padding: 0 0 0 0; 
+    margin-bottom: 0px; 
+    border: 0px;
+  /*  border: 1px solid #ddd;*/
+    width: 80%;
+}
+
+.userprofile dl.list dd:after {
+    clear: none;
+}
+
+/* Fixing Messaging interface so it does not go 100% wide
+-------------------------*/
+.message .contactselector {
+       max-width: 300px;
+}
+
+/* Course
+-------------------------*/
+
+.course-content .main {
+    background: #f7f5f1;
+    border: 1px solid #ddd
+}
+
+.course-content .current {
+    background: #e17e33;
+}
+
+.course-content h1, .course-content h2, .course-content h3 {
+    font-size: 140%;
+}
+
+h3.sectionname {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 140%;
+}
+
+.coursebox>.info>h3.coursename {
+    margin-bottom: 0px;
+}
+
+.course-content .current .left.side {
+  color: #fff;
+}
+
+.course-content .main .content {
+    background: #fff;
+}
+
+.course-content .section-summary .section-title {
+    margin-top: 0px;
+}
+
+.path-course-view .section .summary {
+    padding-left: 0px;
+    padding-top: 10px;
+}
+
+.path-course-view .section .summary:empty {
+    display: none;
+}
+
+.course-content ul.topics li.section .summary {
+    margin-left: 15px;
+}
+
+.course-content .section-summary .summarytext {
+    padding-left: 15px;
+    padding-top: 0px;
+}
+
+.section .activity.modtype_label.label {
+    padding-left: 0px;
+    margin-left: 0px;
+}
+
+.section .activity .editing_move {
+    left: 5px;
+}
+
+.course-content ul.section {
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+    margin-top: 0px;
+}
+
+.course-content ul.weeks li.section, .course-content ul.topics li.section {
+    margin-top: 0px;
+    padding-bottom: 0px;
+}
+
+.course-content ul.topics li.section .content, .course-content ul.weeks li.section .content {
+    padding-bottom: 0.1em;
+}
+
+.course-content ul.topics li.section {
+    margin-top: 0px;
+    padding-bottom: 0px;
+    margin: 0 0 10px 0;
+}
+
+.course-content ul li.section.main {
+    border-bottom: 1px solid #eee;
+}
+
+.course-content ul.weeks li.section .left, .course-content ul.topics li.section .left {
+    width: 20px;
+    padding-right: 15px;
+}
+
+.course-content ul.weeks li.section .right, .course-content ul.topics li.section .right {
+    width: 20px;
+    padding-left: 15px;
+}
+
+.mdl-right {
+    padding-right: 10px;
+}
+
+
+/* Course video files from the play system needs some massaging... <3 
+--------------------------------------------------------------------*/
+.section>.activity .mod-indent-outer {
+    width: 94%;
+}
+
+.mod-indent-outer > div > .contentwithoutlink {
+    display: block !important;
+}
+
+span[id^='play.dsv.su.se'] { /* CSS3 IS THE SHIT */
+    display: block;
+    height: 0;
+    padding-bottom: 56%;
+    position: relative;
+    width: 100%;
+}
+
+span[id^='play.dsv.su.se'] > object {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+span[id^='play.dsv.su.se'] > object > video {
+    height: 100%;
+    width: 100%;
+}
+
+/* Minor fix (TODO: Clean dis shizz up..) for YouTube embeds */
+iframe {
+    height: 250px;
+    width: 100%;
+}
+
+/* Fix textarea to be not resizable any wider
+-------------------------*/
+textarea {
+    resize: vertical;
+}
+
+
+/* Custom CSS
+-------------------------*/
+a.logo {
+   /* background: url([[pix:theme|dsv-logo-en]]) no-repeat 0 0;*/
+    display: block;
+    float: left;
+    height: 130px;
+    width: 100%;
+    max-width: 730px;
+}
+
+.logo-text {
+    display: none;
+}
+/*
+.dir-rtl a.logo {
+    background: url([[pix:theme|dsv-logo-en]]) no-repeat 100% 0;
+    display: block;
+    float: right;
+}*/
+
+.navbar {
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 0 !important;
+}
+
+.navbar .btn-navbar .icon-bar {
+    background-color: #666;
+}
+
+.navbar .navbar-inner {
+    border-color: #002f5f;
+    box-shadow: none;
+    max-width: 1680px;
+    margin: 0 auto;
+}
+
+.navbar .container-fluid{
+    background-color: #002f5f;
+    /*border-bottom: 5px solid #DA5013;*/
+    color: #fff;
+    text-shadow: none;
+}
+
+.navbar .navbar-text{
+    background-color: #002f5f;
+    /*border-bottom: 5px solid #DA5013;*/
+    color: #fff;
+    text-shadow: none;
+}
+
+.navbar .navbar-text a{
+    background-color: #002f5f;
+    /*border-bottom: 5px solid #DA5013;*/
+    color: #FFAF0A;
+    text-shadow: none;
+}
+
+.navbar .nav>li>a{
+    background-color: #002f5f;
+    color: #fff;
+    text-shadow: none;
+}
+
+.navbar .nav>li>a:hover{
+    background-color: #fff;
+    color: #002f5f;
+    text-shadow: none;
+}
+
+.navbar .nav>li{
+    color: #fff;
+    text-shadow: none;
+}
+
+.navbar .brand {
+    color: #fff;
+    text-shadow: none;
+}
+
+#page-footer {
+    margin-top: 20px;
+    padding: 0 20px 0;
+    border-top: solid 1px #d2d7dc;  
+    color: rgb(0, 47, 95);
+    line-height: 20px;
+    text-align: left;
+    font-size: 10px;
+    padding-bottom: 10px;
+    background-color: #fff;
+    font-family: Verdana;
+}
+
+#page-footer a {
+    color: #002f5f;
+}
+
+#page-footer b {
+    font-size: 12px;
+}
+
+.footnote.text-center {
+    text-align: left; /* Ridiculously stupid rule */
+}
+
+.dsvlogo {
+    /*margin:-20px;*/
+    margin-top: -20px;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #002f5f;
+    height: 130px;
+}
+
+.navbar-text {
+    padding-left: 15px;
+}
+
+body {
+    padding-top: 50px;
+}
+
+@media(max-width: 979px) {
+
+    .navbar-fixed-top .navbar-inner {
+        padding: 0px;
+    }
+    .navbar-fixed-bottom .navbar-inner {
+        padding: 0px;
+    }
+    .navbar-fixed-top {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .dsvlogo {
+        height: 150px;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .navbar .brand {
+        padding-left: 0px;
+        margin: 0;
+    }
+    a.logo {
+        margin-top: 20px;
+    }
+}
+
+@media(max-width: 767px) {
+    #page-content {
+        font-size: 14px;
+    }
+    .navbar .brand {
+        padding-left: 20px;
+        margin: 0;
+
+    }
+    .navbar-fixed-top .navbar-inner {
+        padding: 0px;
+    }
+    .navbar-fixed-bottom .navbar-inner {
+        padding: 0px;
+    }
+    .navbar-fixed-top {
+        position: fixed;
+        left: 0px;
+        top: 0px;
+    }
+    .navbar .btn-navbar {
+        margin-right: 10px;
+    }
+    .dsvlogo {
+        height: 113px;
+        padding-bottom: 15px;
+        /*min-height: 113px;*/
+    }
+    a.logo {
+        margin-top: -20px;
+        max-width: 550px;
+        background-size: 550px 98px;
+        /*height: 130px;*/
+    }
+    .dsvlogo {
+        max-height: 98px;
+    }
+}
+
+@media(max-width: 320px) {
+    #region-main>div {
+        font-size: 14px !important;
+    }
+}
+
+@media(max-width: 479px) {
+    .dsvlogo {
+        height: 55px !important;
+        max-height: 55px;
+    }
+}
+
+@media(max-width: 600px) {
+    #page-content {
+        font-size: 16px;
+    }
+    .logo-text {
+        display: block;
+        margin-top: 10px;
+    }
+    a.logo{
+        display: none;
+    }
+    .logo-text a{
+        color: #FFF;
+        font-family: Georgia, "Times New Roman", Times, serif;
+        text-decoration: none;
+        font-size: 1.4em;
+        white-space: normal;
+        line-height: 1.2;
+    }
+    .dsvlogo {
+        height: 33px;
+        max-height: 55px;
+        padding-bottom: 0px;
+    }
+    #page-footer {
+        background-color: #d3d3d3;
+        margin-left: -20px;
+        margin-right: -20px;
+        margin-bottom: 10px;
+    }
+    #page-footer b, #page-footer br{ 
+        display: none;
+    }
+}
+
+/* Fixing iOS and Android devices problems with non-showing dropdown menu
+-------------------------*/
+@media(max-width: 480px) {
+    .nav-collapse, .nav-collapse.collapse {
+        -webkit-transform: none; /* Safari and Chrome */
+        -moz-transform: none; /* Firefox */
+        -ms-transform: none; /* IE 9 */
+        -o-transform: none; /* Opera */
+        transform: none;
+    }
+    .path-mod-forum .forumheaderlist .picture {
+        display: table-cell;
+        width: 5%;
+    }
+}
+
+/* Fixing forum discussion control buttons
+-------------------------*/
+#page-mod-forum-discuss .discussioncontrols .discussioncontrol {
+    float: left;
+    width: auto;
+    padding-right: 10px;
+    padding-bottom: 5px;
+}
+
+.discussioncontrol.nullcontrol {
+    display: none;
+}
+
+#page-mod-forum-discuss .discussioncontrol.movediscussion {
+    text-align: left;
+}
+
+.path-mod-forum .forumheaderlist .replies {
+    text-align: center;
+
+}
+
+.forumpost.unread .row.header {
+    background-color: #f4c78f;
+    padding-bottom: 2px;
+}
+
+/* Fixing ordered lists numbering being shifted out of the frame
+-------------------------*/
+#region-main ol {
+    padding-left: 15px;
+}
+
+/* Altering grading view to get more space for the usability sake
+-------------------------*/
+div.usersummary {
+    padding-bottom: 1em;
+    margin-bottom: 0px;
+    border-bottom: 1px solid #ddd;
+}
+
+div.usersummary + div.submissionstatustable {
+    margin-bottom: 1em;
+    float: left;
+    padding-right: 50px;
+}
+
+.gradingsummary + .submissionstatustable {
+    float: none;
+    margin-right: 0;
+}
+
+div.submissionstatustable + h3 {
+    display: none;
+}
+
+.gradingform .fitemtitle {
+    width: 120px !important;
+    float: left;
+    display: inline-block;
+    padding-right: 15px;
+    padding-top: 5px;
+    margin-top: 0px !important;
+}
+
+.gradingform .fitem_f .fitemtitle {
+   width: 50px !important;
+}
+
+.gradingform .felement {
+    width: auto !important;
+    margin-left: 0px !important;
+}
+
+.gradingform .felement #id_grade {
+    width: 100px !important;
+}
+
+.gradingform .fitem {
+    margin-bottom: 5px;
+}
+
+.gradingform .feditor,  
+.gradingform .ffilemanager {
+    padding-top: 30px;
+}
+
+#fitem_id_assignfeedbackcomments_editor > .fitemtitle {
+    width: auto !important;
+}
+
+#fitem_id_assignfeedbackcomments_editor > .feditor {
+    padding-bottom: 20px;
+}
+
+.gradingform {
+    padding-left: 0px;
+    display: inline-block;
+    padding-top: 10px;
+}
+
+#fgroup_id_buttonar > .felement {
+    margin-left: 20px;
+    text-align: center;
+}
+
+#fgroup_id_navar > .felement {
+    margin-left: 20px;
+    text-align: center;
+}
+
+#fgroup_id_buttonar {
+    padding: 19px 0px 20px;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+}
+
+        .loginbox .expand .collapsed {
+            cursor: pointer;
+            background-image: url([[pix:theme|collapsed]]);
+            background-position: 2px 50%;
+            background-repeat: no-repeat;
+            margin: auto;
+            width: 350px;
+        }
+
+        .loginbox .expand .expanded {
+            cursor: pointer;
+            background-image: url([[pix:theme|expanded]]);
+            background-position: 2px 50%;
+            background-repeat: no-repeat;
+            margin: auto;
+            width: 350px;
+        }
+
+/* Custom CSS Settings
+-------------------------*/
+[[setting:customcss]]
