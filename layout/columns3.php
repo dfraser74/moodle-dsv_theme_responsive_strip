@@ -72,6 +72,23 @@ echo $OUTPUT->doctype() ?>
 </header>
 -->
 
+<?php
+        // If logged in as a guest user, show a string to that effect.
+        if (isguestuser()) {
+            $loginurl = get_login_url();
+            $returnstr = get_string('loggedinasguest');
+            $returnstr .= " (<a href=\"$loginurl\">".get_string('login').'</a>)';
+            $usermenuclasses = 'usermenu';
+            echo html_writer::div(
+                html_writer::span(
+                    $returnstr,
+                    'login'
+                ),
+                $usermenuclasses
+            );
+        }
+?>
+
 <div id="page" class="container-fluid">
 
     <header id="page-header" class="clearfix">
